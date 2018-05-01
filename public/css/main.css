@@ -1,0 +1,167 @@
+body {
+  background-image: url(/img/brickwall.png);
+  font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.hero-image {
+    background-image: url(/img/records-texture_4460x4460.jpg);
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: solid 40px rgba(0, 0, 0, 0.77);
+    border-radius: 10px;
+
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    font-size: 4em;
+    font-family: 'Monoton', cursive;
+}
+
+.sub-title {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.section-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5%;
+    clear: both;
+}
+.shelf-container {
+    margin-top: 2%;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.record-card {
+    padding: 1%;
+    border-bottom: 40px solid rgba(0, 0, 0, 0.77);
+    text-align: center;
+    margin-top: 4%;
+    width: 33%;
+}
+
+img {
+    width: 400px;
+    box-shadow: 5px 5px 10px rgb(185, 185, 185)
+}
+
+img:hover {
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+.artist {
+    font-weight: bold;
+}
+.album {
+    font-style: italic;
+}
+
+.price {
+    margin-bottom: 10%;
+}
+
+.button {
+    margin-left: 2%;
+    font-weight: bold;
+    border: 1px solid transparent !important;
+}
+
+.button:hover {
+    border: 1px solid white !important;
+}
+
+#add-button {
+    margin-top: 5%;
+    float: right;
+}
+
+.field {
+    margin: 5% auto 20%;
+}
+
+form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 2.5%;
+}
+
+#see-full {
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.show-record {
+    background: rgba(0, 0, 0, 0.77);
+    padding: 5%;
+    clear: both;
+    display: flex;
+    border-radius: 5px;
+}
+
+.show-image {
+
+}
+
+.record-info {
+    width: 50%;
+    padding: 5% 0 5% 5%;
+    color: white;
+    font-weight: bold;
+}
+
+.record-info span {
+    color: rgb(149, 149, 149)
+}
+
+.record-info p {
+    margin-top: 2%;
+}
+
+footer {
+    margin-top: 200px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.77);
+    color: white;
+    text-align: center;
+}
+
+footer p:first-child {
+    padding-top: 2.5%;
+}
+
+footer p a {
+    color: rgb(149, 149, 149);
+}
