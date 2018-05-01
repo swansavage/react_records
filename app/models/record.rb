@@ -5,7 +5,12 @@ class Record
     attr_reader :id, :artist, :album_title, :image, :release_date, :description, :price, :qty
 
     # connect to postgres
-    DB = PG.connect(host: "localhost", port: 5432, dbname: 'record_store')
+    if(ENV['DATABASE_URL'])
+        uri = URI.parse(ENV['DATABASE_URL'])
+        DB = PG.connect(uri.hostname, uri.port, nil, nil, uri.path[1..-1], uri.user, uri.password)
+    else
+        DB = PG.connect(host: "localhost", port: 5432, dbname: 'record_store')
+    end
 
     def initialize(opts = {})
         @id = opts["id"].to_i
